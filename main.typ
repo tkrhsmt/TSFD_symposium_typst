@@ -1,6 +1,8 @@
 #import "style/tsfd_style.typ":*
+#import "bib_style/bib_style.typ":*
 
 #show: tsfd_init.with(num: 40, date: "2025年3月4日")
+#show: bib_init
 
 #tsfd_title(
   title: [タイトル（和文）],
@@ -41,3 +43,16 @@
 == １２３４５６
 
 １２３４５６７８９０１２３４５６７８９０１２３４５１２３４５６７８９０１２３４５６７８９０１２３４５６
+
+#bibliography-list(
+    bib-tex[
+        @article{sample,
+          author = {１２３４ほか2名},
+          title = {生産研究},
+          volume = {58},
+          number = {1},
+          year = {2006},
+          pages = {49-441},
+        }
+    ],
+)

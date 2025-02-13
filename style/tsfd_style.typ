@@ -104,7 +104,6 @@
   }
 
   // 図表設定
-  set figure(placement: top)
   set figure.caption(separator: [　])
   show figure: set block(breakable: true)
   show figure.where(kind: table): set figure.caption(position: top)
